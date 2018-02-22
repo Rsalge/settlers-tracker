@@ -19,13 +19,26 @@
   grid-column: 1 / 2;
   grid-row: 2;
   height: 100%;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .App-center-container {
   grid-column: 2 / 3;
   background: rgba(76, 175, 80, 0.1);
+  overflow: hidden;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .App-right-container {
   grid-column: 3 / 4;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  margin: 10px;
 }

@@ -19,7 +19,7 @@ class App extends Component {
         <div className="App">
           <AppBar className="App-bar" title="Settlers Tracker" />
           <Games />
-          <Turns className="App-center-container"/>
+          <Turns className="App-center-container" style={{overflow: 'hidden'}} />
           <PlayerStats />
         </div>
     </MuiThemeProvider>
