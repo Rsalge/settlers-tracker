@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Games from './Games.js';
-import PlayerStats from './PlayerStats.js';
-import Turns from './Turns.js';
+import Games from './components/Games.js';
+import PlayerStats from './components/PlayerStats.js';
+import Turns from './components/Turns.js';
 import { AppBar } from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './App.css';
