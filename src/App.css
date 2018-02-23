@@ -18,6 +18,14 @@
 .App-top-center-container {
   grid-column: 1 / 4;
   grid-row: 2;
+  height: 100%;
+  /* background: rgba(76, 175, 80, 0.1); */
+  overflow: scroll;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  margin: 2px;
+  overflow: hidden
 }
 
 .App-left-container {

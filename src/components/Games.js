@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import { List, ListItem, Subheader } from 'material-ui';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-
-import { increment, decrement, clear } from '../actions/actions.js';
 
 class Games extends Component {
   constructor(props) {
@@ -35,8 +31,4 @@ class Games extends Component {
   }
 }
 
-let mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ increment, decrement, clear }, dispatch);
-}
-
-export default connect(null, mapDispatchToProps)(Games);
+export default Games;

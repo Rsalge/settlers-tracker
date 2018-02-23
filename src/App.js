@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-          <CurrentTurn className="Current-turn-container"/>
+          <CurrentTurn />
           <AppBar className="App-bar" title="Settlers Tracker"/>
           <Games />
           <Turns />

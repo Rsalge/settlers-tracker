@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-const Counter = (props) => <div>{props.counter}</div>
+const Counter = (props) => <div>{props.counter1}</div>
 
 var mapStateToProps = (state) => {
   return {
-    counter: state.counter
+    counter1: state.counter1
   };
 }
 export default connect(mapStateToProps)(Counter);

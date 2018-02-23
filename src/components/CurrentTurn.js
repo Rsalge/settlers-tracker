@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { List, ListItem, Subheader } from 'material-ui';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import Counter from './Counter.js'
 
-import { increment, decrement, clear } from '../actions/actions.js';
+import Footer from './Footer.js'
+import AddTodo from '../containers/AddToDo.js'
+import VisibleTodoList from '../containers/VisibleTodoList.js'
+
+
+// import { increment, decrement, clear, incrementVP, decrementVP, clearVP } from '../actions/actions.js';
 
 class CurrentTurn extends Component {
   constructor(props) {
@@ -16,20 +18,13 @@ class CurrentTurn extends Component {
 
   render() {
     return (
-      <div>
-        <Counter />
-        <div>
-          <button onClick={this.props.increment}> INCREMENT</button>
-          <button onClick={this.props.decrement}> DECREMENT</button>
-          <button onClick={this.props.clear}> CLEAR </button>
-        </div>
+      <div className="App-top-center-container">
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
       </div>
     );
   }
 }
 
-let mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ increment, decrement, clear }, dispatch);
-}
-
-export default connect(null, mapDispatchToProps)(CurrentTurn);
+export default CurrentTurn;
