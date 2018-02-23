@@ -1,13 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
+import { GridList } from 'material-ui/GridList';
+
+const styles = {
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+  },
+  gridList: {
+    display: 'flex',
+    flexWrap: 'nowrap',
+    overflowX: 'auto',
+  },
+  titleStyle: {
+    color: 'rgb(0, 188, 212)',
+  },
+};
  
 const TodoList = ({ todos, onTodoClick }) => (
-  <ul>
+  <GridList style={styles.gridList} cols={2.2}>
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
     ))}
-  </ul>
+  </GridList>
 )
  
 TodoList.propTypes = {
