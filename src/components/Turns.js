@@ -79,11 +79,11 @@ class Turns extends Component {
 
   render() {
     return (
+      <div className="App-center-container">
       <Table
-        // className="App-center-container"
         selectable={false}
         height='90%'
-        style={{overflow: 'hidden'}}
+        style={{overflow: 'scroll'}}
       >
         <TableHeader
           displaySelectAll={false}
@@ -100,6 +100,7 @@ class Turns extends Component {
         {this.state.turns.map((turn) => this.getTurns(turn))}
         </TableBody>
       </Table>
+    </div>
     );
   }
 }

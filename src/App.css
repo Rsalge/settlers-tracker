@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% 20% 60% 10%;
 }
 
 .App-bar {
@@ -15,9 +15,14 @@
   grid-row: 1;
 }
 
+.App-top-center-container {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
 .App-left-container {
   grid-column: 1 / 2;
-  grid-row: 2;
+  grid-row: 3;
   height: 100%;
   border-style: solid;
   border-width: thin;
@@ -27,8 +32,10 @@
 
 .App-center-container {
   grid-column: 2 / 3;
-  background: rgba(76, 175, 80, 0.1);
-  overflow: hidden;
+  grid-row: 3;
+  height: 100%;
+  /* background: rgba(76, 175, 80, 0.1); */
+  overflow: scroll;
   border-style: solid;
   border-width: thin;
   border-radius: 10px;
@@ -37,6 +44,8 @@
 
 .App-right-container {
   grid-column: 3 / 4;
+  grid-row: 3;
+  height: 100%;
   border-style: solid;
   border-width: thin;
   border-radius: 10px;
