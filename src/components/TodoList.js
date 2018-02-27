@@ -19,12 +19,12 @@ const styles = {
   },
 };
  
-const TodoList = ({ todos, onTodoClick }) => (
-  <GridList style={styles.gridList} cols={2.2}>
+const TodoList = ({ todos, onTodoClick, onIncrementClick, onDecrementClick }) => (
+  <ul style={styles.gridList} cols={2.2}>
     {todos.map(todo => (
-      <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
+      <Todo key={todo.id} {...todo} onDecrementClick={onDecrementClick} onIncrementClick={onIncrementClick} />
     ))}
-  </GridList>
+  </ul>
 )
  
 TodoList.propTypes = {

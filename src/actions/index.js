@@ -22,6 +22,20 @@ export const toggleTodo = id => {
     id
   }
 }
+
+export const incrementCount = id => {
+  return {
+    type: 'INCREMENT_COUNT',
+    id
+  }
+}
+
+export const decrementCount = id => {
+  return {
+    type: 'DECREMENT_COUNT',
+    id
+  }
+}
  
 export const VisibilityFilters = {
   SHOW_ALL: 'SHOW_ALL',

@@ -19,9 +19,7 @@ class CurrentTurn extends Component {
   render() {
     return (
       <div className="App-top-center-container">
-        <AddTodo />
         <VisibleTodoList />
-        <Footer />
       </div>
     );
   }
