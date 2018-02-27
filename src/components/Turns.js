@@ -60,7 +60,6 @@ class Turns extends Component {
   }
 
   generateHeaders(header) {
-    console.log('HERE are the headers', header)
     return (
       <TableHeaderColumn
         style={
